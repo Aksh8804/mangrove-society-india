@@ -1,0 +1,25 @@
+.event-ticker {
+    width: 100%;
+    overflow: hidden;
+    background: #1f5e3b;
+    color: white;
+    padding: 12px 0;
+    margin-bottom: 20px;
+}
+
+.ticker-track {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    animation: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}

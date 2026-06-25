@@ -1,0 +1,43 @@
+.gallery-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(250px,1fr));
+
+    gap: 15px;
+}
+
+.gallery-grid img {
+
+    width: 100%;
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    transition: .4s;
+}
+
+.gallery-grid img:hover {
+
+    transform: scale(1.05);
+}
+
+.back-btn {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.back-btn a {
+    background: #1f5e3b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.back-btn a:hover {
+    background: #2f7d52;
+}

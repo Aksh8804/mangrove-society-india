@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Registration - Mangrove Society of India</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <style>
+
+        .registration-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .registration-container h2 {
+            color: #1f5e3b;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #2f7d52;
+            padding-bottom: 5px;
+        }
+
+        .registration-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .registration-form label {
+            font-weight: bold;
+            color: #1f5e3b;
+        }
+
+        .registration-form input {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        .membership-options {
+            margin-top: 10px;
+        }
+
+        .membership-options label {
+            display: block;
+            margin: 10px 0;
+            font-weight: normal;
+        }
+
+        .fee-box {
+            background: #ffffff;
+            padding: 20px;
+            border-left: 5px solid #1f5e3b;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            border-radius: 6px;
+        }
+
+        .submit-btn {
+            background: #1f5e3b;
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .submit-btn:hover {
+            background: #2f7d52;
+        }
+
+        .back-home {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .back-home a {
+            background: #1f5e3b;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .back-home a:hover {
+            background: #2f7d52;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<header>
+    <h1>Mangrove Society of India</h1>
+    <p>Membership Registration Form</p>
+</header>
+
+<div class="back-home">
+    <a href="index.html">← Back to Home</a>
+</div>
+
+<div class="registration-container">
+
+    <h2>Membership Registration</h2>
+
+    <form class="registration-form">
+	<div class="form-header">
+
+    <div class="form-details">
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+
+    </div>
+
+    <div class="photo-section">
+
+        <div class="photo-placeholder">
+    <img id="photoPreview" src="" alt="">
+    <span id="photoText">Passport Size Photo</span>
+</div>
+
+        <label for="photoUpload" class="upload-label">
+            Upload Photo
+        </label>
+
+        <input
+            type="file"
+            id="photoUpload"
+            name="photo"
+            accept="image/*">
+
+    </div>
+
+</div>
+
+       	
+	<label for="gender">Gender:</label>
+	<select id="gender" name="gender">
+    	    <option value="">Select Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+	</select>
+
+        <label for="aadhaar">Aadhaar No.:</label>
+        <input type="text" id="aadhaar" name="aadhaar">
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="contact">Contact No. (Preferably WhatsApp):</label>
+        <input type="tel" id="contact" name="contact">
+
+        <label for="institution">Institution:</label>
+        <input type="text" id="institution" name="institution">
+
+	<label for="designation">Designation / Occupation:</label>
+	<input type="text" id="designation" name="designation">
+
+        <label for="qualification">Educational Qualification:</label>
+	<input type="text" id="qualification" name="qualification">
+	<label for="permanentAddress">Permanent Address:</label>
+	<textarea id="permanentAddress"
+          	  name="permanentAddress"
+                  rows="4"></textarea>
+
+	<label for="residentialAddress">
+    	    Residential / Correspondence Address:
+	</label>
+	<textarea id="residentialAddress"
+          	  name="residentialAddress"
+           	  rows="4"></textarea>
+
+	<label for="state">State:</label>
+        <input type="text" id="state" name="state">
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city">
+
+        <label for="pincode">Pincode:</label>
+        <input type="text" id="pincode" name="pincode">
+
+        <h3>Membership Category</h3>
+
+        <div class="membership-options">
+
+            <label>
+                <input type="radio" name="membershipType" value="student">
+                Annual Membership
+            </label>
+
+	    <label>
+                <input type="radio" name="membershipType" value="life">
+                Life Membership
+            </label>
+
+            <label>
+                <input type="radio" name="membershipType" value="institution">
+                Institutional Life Membership
+            </label>
+
+        </div>
+
+        <h3>Fee Details</h3>
+
+	<div class="fee-box">
+
+    	     <p><strong>Annual Membership:</strong> Rs. 1000</p>
+	     
+	     <p><strong>Life Membership:</strong> Rs. 5000</p>
+
+             <p><strong>Institutional Life Membership:</strong> Rs. 100000</p>
+
+	</div>
+
+	<h3>Payment Details</h3>
+
+	<div class="fee-box">
+
+    	     <p><strong>Account Name:</strong> Mangrove Society of India</p>
+
+    	     <p><strong>Bank Name:</strong> [Bank Name]</p>
+
+    	     <p><strong>Account Number:</strong> XXXXXXXXXXXX</p>
+
+    	     <p><strong>IFSC Code:</strong> XXXXXXXX</p>
+
+    	     <p><strong>Branch:</strong> [Branch Name]</p>
+
+   	     <p><strong>UPI ID:</strong> example@upi</p>
+
+	</div>
+	
+	<label for="receipt">Payment Receipt:</label>
+	<input type="file"
+       	       id="receipt"
+               name="receipt"
+               accept=".jpg,.jpeg,.png,.pdf">
+
+        <button type="submit" class="submit-btn">
+            Submit Application
+        </button>
+
+    </form>
+
+</div>
+
+<footer>
+    © 2026 Mangrove Society of India. All Rights Reserved.
+</footer>
+
+<script>
+
+document.getElementById('photoUpload')
+.addEventListener('change', function(event) {
+
+    const file = event.target.files[0];
+
+    if (!file) return;
+
+    const reader = new FileReader();
+
+    reader.onload = function(e) {
+
+        const preview =
+            document.getElementById('photoPreview');
+
+        preview.src = e.target.result;
+        preview.style.display = 'block';
+
+        document.getElementById('photoText')
+                .style.display = 'none';
+    };
+
+    reader.readAsDataURL(file);
+
+});
+
+</script>
+
+
+</body>
+</html>
